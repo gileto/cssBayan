@@ -2,4 +2,44 @@ body {
  box-sizing: border-box;
  margin: 0;
  padding: 0;
+ transition: 0.5 ease all;
+}
+
+.container {
+ max-width: 70%;
+ margin: 0 auto;
+}
+
+.title {
+ padding-bottom: 20px;
+}
+
+input {
+ display: none;
+}
+
+input ~ img {
+ display: none;
+}
+
+input:checked ~ img,
+label:hover img {
+ display: block;
+ margin: 0 auto;
+}
+
+img {
+ width: 50%;
+}
+
+label {
+ width: 100%;
+ padding: 10px;
+ border-width: 100%;
+}
+
+.text-icon {
+ display: flex;
+ justify-content: space-between;
+ border-top: 1px solid rgb(165, 163, 163);
 }
