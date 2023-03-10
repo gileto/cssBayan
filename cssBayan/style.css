@@ -23,13 +23,17 @@ input {
 }
 
 input ~ img {
- display: none;
+ display: block;
+ margin: 0 auto;
+ width: 0;
+ transition: all ease-out 0.7s;
 }
 
 input:checked ~ img,
 label:hover .meme {
  display: block;
  margin: 0 auto;
+ width: 60%;
 }
 
 label:hover .minus,
