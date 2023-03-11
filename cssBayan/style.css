@@ -10,10 +10,6 @@ body {
  margin: 0 auto;
 }
 
-.bayan:not(:hover) .text-icon .sign {
- display: none;
-}
-
 .title {
  padding-bottom: 1em;
 }
@@ -29,19 +25,16 @@ input ~ img {
  transition: all ease-out 0.7s;
 }
 
-input:checked ~ img,
-label:hover .meme {
+input:checked ~ img {
  display: block;
  margin: 0 auto;
  width: 60%;
 }
 
-label:hover .minus,
 input:checked ~ .text-icon .minus {
  display: block;
 }
 
-label:hover .plus,
 input:checked ~ .text-icon .plus {
  display: none;
 }
@@ -66,10 +59,6 @@ p {
  font-weight: 700;
 }
 
-label:hover {
- cursor: pointer;
-}
-
 .plus,
 .minus {
  width: 2em;
@@ -85,12 +74,32 @@ label:hover {
  }
 }
 
+@media screen and (min-width: 821px) {
+ label:hover {
+  cursor: pointer;
+ }
+
+ label:hover .plus {
+  display: none;
+ }
+
+ label:hover .minus {
+  display: block;
+ }
+
+ label:hover .meme {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+ }
+ .bayan:not(:hover) .text-icon .sign {
+  display: none;
+ }
+}
+
 @media screen and (max-width: 820px) {
  .text {
   font-size: 0.9em;
- }
- label:hover {
-  cursor: initial;
  }
 
  /*.bayan:not(:hover) .text-icon .plus {
