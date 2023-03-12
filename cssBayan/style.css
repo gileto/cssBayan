@@ -67,8 +67,12 @@ p {
  display: none;
 }
 
-label:active .text-icon .text {
- color: blue;
+label:active .text-icon {
+ color: rgb(72, 181, 208);
+}
+
+label:active .meme {
+ opacity: 0.5;
 }
 
 @media screen and (max-width: 1920px) {
@@ -99,7 +103,7 @@ label:active .text-icon .text {
  }
 
  .bayan:not(:hover) input:not(:checked) ~ .text-icon .text {
-  color: aquamarine;
+  color: rgb(72, 181, 208);
  }
 }
 
